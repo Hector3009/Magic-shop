@@ -1,4 +1,38 @@
 @charset "UTF-8";
+/* Nabvar 2 */
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #9618bd;
+}
+
+.mask-custom {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(190, 173, 250, 0.15);
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+}
+
 .video-background-holder {
   position: relative;
   background-color: black;
