@@ -1,0 +1,152 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
+
+
+@import "node_modules/bootstrap/scss/maps";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+
+// Optional
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+// etc
+
+ /* Nabvar 2 */
+    /* Color of the links BEFORE scroll */
+    .navbar-scroll .nav-link,
+    .navbar-scroll .navbar-toggler-icon,
+    .navbar-scroll .navbar-brand {
+      color: #fff;
+    }
+    
+    /* Color of the links AFTER scroll */
+    .navbar-scrolled .nav-link,
+    .navbar-scrolled .navbar-toggler-icon,
+    .navbar-scrolled .navbar-brand {
+      color: #fff;
+    }
+    
+    /* Color of the navbar AFTER scroll */
+    .navbar-scroll,
+    .navbar-scrolled {
+      background-color: #9618bd;
+    }
+    
+    .mask-custom {
+      backdrop-filter: blur(5px);
+      background-color: rgb(190, 173, 250, .15);
+    }
+    
+    .navbar-brand {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      font-family: 'Dancing Script', cursive;
+      
+    }
+
+// Style h1
+.txtLlamativo{
+       font-family: 'Dancing Script', cursive;
+}
+
+// Demo video styles
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
+// Products Carousel styles
+#myCarousel {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item>div {
+      display: none;
+  }
+
+  .carousel-inner .carousel-item>div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(25%) !important;
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start,
+  .active.carousel-item-end {
+      transform: translateX(0) !important;
+  }
+
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+  }
+}
+
+// Background img
+.bgroundImg{
+  background-image: url(img/Purlple-background.png);
+}
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
