@@ -729,6 +729,10 @@ progress {
   font-family: "Dancing Script", cursive;
 }
 
+.txtLlamativo {
+  font-family: "Dancing Script", cursive;
+}
+
 .video-background-holder {
   position: relative;
   background-color: black;
