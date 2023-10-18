@@ -16,6 +16,65 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
+<style>
+  /* // Products Carousel styles */
+#myCarousel {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item>div {
+      display: none;
+  }
+
+  .carousel-inner .carousel-item>div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(25%) !important;
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start,
+  .active.carousel-item-end {
+      transform: translateX(0) !important;
+  }
+
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+  }
+}
+
+/* // Background img */
+.bgroundImg{
+  background-image: url(img/Purlple-background.png);
+}
+
+/* // Style h1 */
+.txtLlamativo{
+       font-family: 'Dancing Script', cursive;
+}
+</style>
 <body>
   <!-- Navbar -->
     <nav class=" navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0" aria-label="Seventh navbar example">
@@ -88,7 +147,7 @@
       </header>
   
   <!-- Ofertas carousel -->
-<!-- <div id="myCarousel" class="carousel slide container rounded-3 border shadow-lg " data-bs-ride="carousel" style="background-image: url(img/Purlple-background.png);">
+<div id="myCarousel" class="carousel slide container rounded-3 border shadow-lg " data-bs-ride="carousel" style="background-image: url(img/Purlple-background.png);">
   <div class="carousel-inner w-100">
       <div class="carousel-item active ">
           <div class="col-md-3">
@@ -189,7 +248,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
   </button>
-</div> -->
+</div>
 <!-- End -->
   </div>
 </section>
